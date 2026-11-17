@@ -1,0 +1,55 @@
+{
+  "name": "dsh-memory",
+  "version": "1.0.0",
+  "description": "跨会话长期记忆：SQLite 记忆库 + 自动召回 + memory_save/search/update/forget 工具 + 14 项可热更新设置。",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "icon": "./icon.svg",
+  "files": [
+    "lib",
+    "locale",
+    "docs",
+    "test",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "memory",
+    "long-term-memory",
+    "sqlite",
+    "recall",
+    "android"
+  ],
+  "license": "MIT",
+  "author": "DSH Memory contributors",
+  "engines": {
+    "node": ">=22.5.0",
+    "dsh": ">=0.2.1-rc.1 <0.3.0-0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-llm": ">=0.2.1-rc.1 <0.3.0-0",
+    "@deepseek-ai/dsh-tools": ">=0.2.1-rc.1 <0.3.0-0",
+    "@deepseek-ai/schemastery": ">=3.18.4 <4"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check lib/index.js && node --check lib/store.js && node --check lib/tools.js && node --check lib/recall.js && node --check lib/command.js && node --check lib/config.js && node --check lib/search.js && node --check lib/text.js && node --check lib/export.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "长期记忆",
+    "description": "跨会话记忆库：自动召回相关条目，提供 memory_save/search/update/forget 等工具；数据存在本机 SQLite，可在插件设置里调整召回强度。"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Long-term Memory",
+    "description": "A cross-session SQLite memory bank with automatic recall and memory_save/search/update/forget tools. All settings are live-editable."
+  }
+}

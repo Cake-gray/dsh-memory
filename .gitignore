@@ -1,0 +1,7 @@
+node_modules/
+*.tgz
+memory.sqlite
+memory.sqlite-wal
+memory.sqlite-shm
+exports/
+.DS_Store

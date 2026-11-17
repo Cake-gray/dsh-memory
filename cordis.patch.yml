@@ -1,0 +1,8 @@
+# dsh-memory bundle patch：把一个 id 固定为 dsh-memory 的插件行插进 profile 的装配树。
+#
+# 所有设置都以 Schemastery 默认值的形式写在 lib/config.js 里，因此这里不需要 config。
+# 用户可以在 DSH 的「插件 → 长期记忆 → 设置」里修改；修改会写入 profile 的
+# cordis.patch.yml（同一 id 的 config 覆盖层），并热更新到正在运行的实例。
+- insert:
+    - id: dsh-memory
+      name: dsh-memory
