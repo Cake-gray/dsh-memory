@@ -6,6 +6,8 @@
 
 > 作者：蛋糕灰（GitHub: [Cake-gray](https://github.com/Cake-gray)） · 仓库：[dsh-memory](https://github.com/Cake-gray/dsh-memory) · 安装包见 [Releases](https://github.com/Cake-gray/dsh-memory/releases) · 许可证：MIT
 
+> **安装**：下载 [Releases](https://github.com/Cake-gray/dsh-memory/releases) 里的 `dsh-memory-1.0.0.tgz` → DSH「扩展 / 插件」→「从本地文件安装」→ 完全退出并重开 DSH。
+
 ---
 
 ## 一、它解决什么问题
